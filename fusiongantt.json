@@ -1,0 +1,55 @@
+{
+	"id": "com.gmail.cse.ari007.fusiongantt",
+	"version": "1.0.0",
+	"name": "Fusion Gantt",
+	"description": "Gantt Chart from FusionCharts",
+	"newInstancePrefix": "FGANTT",
+	"icon": "https://p925088.github.io/SAC-Custom-Widget/fusiongantt_icon.png",
+	"vendor": "Arijit Das",
+	"eula": "Copyright (c) 2021 by Arijit Das. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: [1] The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. [2] THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+	"license": "The MIT License (MIT)",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-gmail-cse-ari007-fusiongantt",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/fusiongantt.min.js",
+			"integrity": "sha256-Zi2X53WQa/2Kxo8+iHg+q2yPD7KLc8vkeTYRuXDLilI=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-gmail-cse-ari007-fusiongantt-sps",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/fusiongantt_sps.min.js",
+			"integrity": "sha256-y42oNFXtHoZ9fgIJrhAusLUVvz2545DbJc/RO+J76m8=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-gmail-cse-ari007-fusiongantt-bps",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/fusiongantt_bps.min.js",
+			"integrity": "sha256-84K//09aUNpPZTwhu/bRiEHeFqLmU2lPdXvKnxshan0=",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"width": {
+			"type": "integer",
+			"default": 700
+		},
+		"height": {
+			"type": "integer",
+			"default": 500
+		},
+		"data": {
+			"type": "string",
+			"description": "Data in JSON format",
+			"default": "{\"README\":\"NOT USED\"}"
+		}
+	},
+	"methods": {	
+		
+	},
+	"events": {
+
+	}
+}
