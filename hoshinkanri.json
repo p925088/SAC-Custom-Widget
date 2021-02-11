@@ -1,0 +1,53 @@
+{
+	"id": "com.gmail.cse.ari007.hoshinkanri",
+	"version": "1.0.0",
+	"name": "Hoshin Kanri Matrix",
+	"description": "Hoshin Kanri Matrix",
+	"newInstancePrefix": "HKM",
+	"icon": "https://p925088.github.io/SAC-Custom-Widget/hoshinkanri_icon.png",
+	"vendor": "Arijit Das",
+	"eula": "The MIT License (MIT) \n Copyright (C) Microsoft Corporation. All rights reserved. \n Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: \n The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. \n THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+	"license": "The MIT License (MIT)",
+	"webcomponents": [
+		{
+			"kind": "main",
+			"tag": "com-gmail-cse-ari007-hoshinkanri",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/hoshinkanri.min.js",
+			"integrity": "sha256-Zi2X53WQa/2Kxo8+iHg+q2yPD7KLc8vkeTYRuXDLilI=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "styling",
+			"tag": "com-gmail-cse-ari007-hoshinkanri-sps",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/hoshinkanri_sps.min.js",
+			"integrity": "sha256-y42oNFXtHoZ9fgIJrhAusLUVvz2545DbJc/RO+J76m8=",
+			"ignoreIntegrity": true
+		},
+		{
+			"kind": "builder",
+			"tag": "com-gmail-cse-ari007-hoshinkanri-bps",
+			"url": "https://p925088.github.io/SAC-Custom-Widget/hoshinkanri_bps.min.js",
+			"integrity": "sha256-84K//09aUNpPZTwhu/bRiEHeFqLmU2lPdXvKnxshan0=",
+			"ignoreIntegrity": true
+		}
+	],
+	"properties": {
+		"data": {
+			"type": "string",
+			"description": "Data in JSON format",
+			"default": "NOT USED"
+		},
+		"width": {
+			"type": "integer",
+			"default": 600
+		},
+		"height": {
+			"type": "integer",
+			"default": 400
+		}
+	},
+	"methods": {		
+	},
+	"events": {		
+	}
+}
