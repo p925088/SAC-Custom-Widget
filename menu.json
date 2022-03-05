@@ -42,10 +42,25 @@
 			"description": "Key of selected item",
 			"default": "undefined"
 		},
+		"showGroupHeader": {
+			"type": "boolean",
+			"description": "Show group header in sub-menu",
+			"default": true
+		},
 		"data": {
 			"type": "string",
 			"description": "Data in JSON format",
-			"default": "[{\"label\":\"Item A\",\"id\":\"A\",\"value\":[\"Item A\"]},{\"label\":\"Item B\",\"id\":\"B\",\"value\":[{\"label\":\"Item B.1\",\"id\":\"B.1\",\"value\":[\"Item B.1\"]},{\"label\":\"Item B.2\",\"id\":\"B.2\",\"value\":[\"Item B.2\"]},{\"label\":\"Item B.3\",\"id\":\"B.3\",\"value\":[\"Item B.3\"]}]},{\"label\":\"Item C\",\"id\":\"C\",\"value\":[{\"label\":\"Item C.1\",\"id\":\"C.1\",\"value\":[\"Item C.1\"]},{\"label\":\"Item C.2\",\"id\":\"C.2\",\"value\":[\"Item C.2\"]}]}]"
+			"default": "[{\"label\":\"Item A\",\"id\":\"A\"},{\"label\":\"Reports\",\"id\":\"B\",\"submenu\":[{\"label\":\"WIP\",\"id\":\"B.S1\",\"group\":\"Summary Reports\"},{\"label\":\"AR\",\"id\":\"B.S2\",\"group\":\"Summary Reports\"},{\"label\":\"Project\",\"id\":\"B.S3\",\"group\":\"Summary Reports\"},{\"label\":\"Time\",\"id\":\"B.D1\",\"group\":\"Detail Reports\"},{\"label\":\"Expense\",\"id\":\"B.D2\",\"group\":\"Detail Reports\"}]},{\"label\":\"Item C\",\"id\":\"C\",\"submenu\":[{\"label\":\"Item C.1\",\"id\":\"C.1\"},{\"label\":\"Item C.2\",\"id\":\"C.2\"}]}]"
+		},
+		"menuBackgroundColor": {
+			"type": "string",
+			"description": "Background color of the menu bar",
+			"default": "#cccccc"
+		},
+		"menuFontColor": {
+			"type": "string",
+			"description": "Font color in the menu bar",
+			"default": "#4b4b4b"
 		},
 		"width": {
 			"type": "integer",
@@ -77,6 +92,39 @@
 			"returnType": "string",
 			"description": "Returns the key of selected item.",
 			"body": "return this.selectedKey;"
+		},
+		"setMenuBackgroundColor": {
+			"description": "Sets background color of the menu bar.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "Background color of the menu bar"
+				}
+			],
+			"body": "this.menuBackgroundColor = newColor;"
+		},
+		"setMenuFontColor": {
+			"description": "Sets the font color in the menu bar.",
+			"parameters": [
+				{
+					"name": "newColor",
+					"type": "string",
+					"description": "Font color in the menu bar"
+				}
+			],
+			"body": "this.menuFontColor = newColor;"
+		},
+		"setGroupHeaderVisible": {
+			"description": "Show group header in sub-menu.",
+			"parameters": [
+				{
+					"name": "flag",
+					"type": "boolean",
+					"description": "Show group header in sub-menu"
+				}
+			],
+			"body": "this.showGroupHeader = flag;"
 		}
 	},
 	"events": {
